@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Setlist Rockero</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <h1 class="titulo">Setlist Rockero</h1>
+        <div class="fila-formulario">
+            <input type="text" id="input-tarea" class="campo-texto" placeholder="Escribe aquí la canción o tarea rock...">
+            <select id="select-estado" class="campo-seleccion">
+                <option value="pendiente">Pendiente (por ensayar)</option>
+                <option value="en-proceso">En Proceso (ensayando)</option>
+                <option value="finalizado">Finalizado (listo para el escenario)</option>
+            </select>
+        </div>
+        <div class="fila-boton">
+            <button id="btn-agregar" class="boton-agregar">¡Agregar al Setlist!</button>
+        </div>
+        <div id="lista-tareas" class="contenedor-tareas">
+            <div class="tarjeta proceso">
+                Ensayar solo de guitarra en Stairway to Heaven
+            </div>
+            <div class="tarjeta pendiente">
+                Aprender riff de Smoke on the Water
+            </div>
+            <div class="tarjeta finalizado">
+                Tocar Sweet Child O' Mine en vivo
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
